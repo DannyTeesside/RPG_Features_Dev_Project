@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3b6026f005a5d34f9f66e8250bc3745, type: 3}
+  m_Name: New Dialogue
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 337715435294873840}
+  - {fileID: 8684256787268133279}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &337715435294873840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e16ed594bade5248a4fa856ca1c25c8, type: 3}
+  m_Name: 9b067b1e-78b7-4388-b374-7f61cb6268d2
+  m_EditorClassIdentifier: 
+  speaker: 000000
+  text: Whattup?
+  avatar: {fileID: 0}
+  voiceClip: {fileID: 0}
+  onEnterAction: 
+  onExitAction: 
+  parents: []
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 168
+    y: 198
+    width: 200
+    height: 100
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &8684256787268133279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e16ed594bade5248a4fa856ca1c25c8, type: 3}
+  m_Name: bcd11cf9-1c18-45a8-bbeb-ba82b21175f8
+  m_EditorClassIdentifier: 
+  speaker: 000000
+  text: Yeah I saw him. What of it?
+  avatar: {fileID: 0}
+  voiceClip: {fileID: 0}
+  onEnterAction: 
+  onExitAction: CompleteTask
+  parents: []
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 181
+    y: 400
+    width: 200
+    height: 100
+  condition:
+    predicate: HasQuest
+    parameters:
+    - Destroy Him

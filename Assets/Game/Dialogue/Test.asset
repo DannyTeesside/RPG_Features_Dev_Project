@@ -1,0 +1,172 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7040844073109606392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e16ed594bade5248a4fa856ca1c25c8, type: 3}
+  m_Name: 10e50a71-1a88-408c-8ca0-429b3edd90a1
+  m_EditorClassIdentifier: 
+  speaker: 000000
+  text: What're you doing? Get it done!
+  avatar: {fileID: 0}
+  voiceClip: {fileID: 0}
+  onEnterAction: 
+  onExitAction: 
+  parents: []
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 98
+    y: 340
+    width: 200
+    height: 100
+  condition:
+    predicate: HasQuest
+    parameters:
+    - Destroy Him
+--- !u!114 &-5777830592884506536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e16ed594bade5248a4fa856ca1c25c8, type: 3}
+  m_Name: b9372ea3-37fd-4329-a2ea-1d406d735b0a
+  m_EditorClassIdentifier: 
+  speaker: 010000
+  text: Sure
+  avatar: {fileID: 6425241025402575561, guid: 942fab1c20d669e4c93a78c207b02b7c, type: 3}
+  voiceClip: {fileID: 0}
+  onEnterAction: 
+  onExitAction: 
+  parents:
+  - 67714e7a-cbb5-48b9-8f86-99b6ff9260e1
+  children:
+  - 8e35c75a-4f10-4603-b3b7-f4833b440593
+  rect:
+    serializedVersion: 2
+    x: 367
+    y: 215
+    width: 200
+    height: 100
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &-3544939098671325468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e16ed594bade5248a4fa856ca1c25c8, type: 3}
+  m_Name: 8e35c75a-4f10-4603-b3b7-f4833b440593
+  m_EditorClassIdentifier: 
+  speaker: 000100
+  text: kk do this
+  avatar: {fileID: 8378443193133127593, guid: 179abaf2fb942634e88b249cdca4c37b, type: 3}
+  voiceClip: {fileID: 0}
+  onEnterAction: 
+  onExitAction: GiveQuest
+  parents:
+  - b9372ea3-37fd-4329-a2ea-1d406d735b0a
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 619
+    y: 225
+    width: 200
+    height: 100
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &-1787186553190666269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e16ed594bade5248a4fa856ca1c25c8, type: 3}
+  m_Name: a118b206-5ab2-4046-9449-3e4174dad214
+  m_EditorClassIdentifier: 
+  speaker: 000000
+  text: So you spoke to him ay?
+  avatar: {fileID: 0}
+  voiceClip: {fileID: 0}
+  onEnterAction: 
+  onExitAction: 
+  parents: []
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 113
+    y: 477
+    width: 200
+    height: 100
+  condition:
+    predicate: CompletedQuest
+    parameters:
+    - Destroy Him
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3b6026f005a5d34f9f66e8250bc3745, type: 3}
+  m_Name: Test
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 1782854363064234404}
+  - {fileID: -5777830592884506536}
+  - {fileID: -3544939098671325468}
+  - {fileID: -7040844073109606392}
+  - {fileID: -1787186553190666269}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &1782854363064234404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e16ed594bade5248a4fa856ca1c25c8, type: 3}
+  m_Name: 67714e7a-cbb5-48b9-8f86-99b6ff9260e1
+  m_EditorClassIdentifier: 
+  speaker: 000100
+  text: want a quest?
+  avatar: {fileID: 8378443193133127593, guid: 179abaf2fb942634e88b249cdca4c37b, type: 3}
+  voiceClip: {fileID: 0}
+  onEnterAction: 
+  onExitAction: 
+  parents: []
+  children:
+  - b9372ea3-37fd-4329-a2ea-1d406d735b0a
+  rect:
+    serializedVersion: 2
+    x: 95
+    y: 145
+    width: 200
+    height: 100
+  condition:
+    predicate: 
+    parameters: []

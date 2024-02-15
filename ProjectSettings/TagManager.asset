@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - PlayerBase
+  - EnemyBase
+  - SpeakerAvatar
+  - NPC
+  - Tooltip
+  - QuestDescription
+  - ChasePath
+  - BlackFade
+  - ChaseReturn
+  - ChaseHealth
+  - Item
+  - Enemy
+  - PlayerBattlePoint
+  - GlobalStateMachine
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - MiniMap
+  - Water
+  - UI
+  - Battler
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Dialogue
+    uniqueID: 510099113
+    locked: 0

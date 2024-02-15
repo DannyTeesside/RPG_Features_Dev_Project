@@ -1,0 +1,243 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5474256975244083272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e16ed594bade5248a4fa856ca1c25c8, type: 3}
+  m_Name: 999699ca-07a3-4276-9e5a-d234d7e0d264
+  m_EditorClassIdentifier: 
+  speaker: 000100
+  text: "Great buddy! Here\u2019s the box, I gotta deliver these down the other block.
+    You gotta take it to THIS address, and make it quick."
+  avatar: {fileID: 8378443193133127593, guid: 179abaf2fb942634e88b249cdca4c37b, type: 3}
+  voiceClip: {fileID: 8300000, guid: e457f5946c7d07f4e8dfc17b6a20bc56, type: 3}
+  onEnterAction: 
+  onExitAction: Chase
+  parents:
+  - 82bc0e52-26fa-4f47-9f78-4ea9900e5e93
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 643
+    y: 317
+    width: 200
+    height: 100
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &-5461308842435539247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e16ed594bade5248a4fa856ca1c25c8, type: 3}
+  m_Name: 418ce50a-6d82-4882-9b78-7c7d951d3b8e
+  m_EditorClassIdentifier: 
+  speaker: 000100
+  text: "Hey great job. But you know I said there\u2019d be a slice in it for ya?
+    Well I got hungry. I haven\u2019t eaten since last Tuesday. Would ya take this
+    instead?... Mmm... Oh yeah...mmmm... It's some good pizza."
+  avatar: {fileID: 8378443193133127593, guid: 179abaf2fb942634e88b249cdca4c37b, type: 3}
+  voiceClip: {fileID: 8300000, guid: cd7f4b9eb2e41344187f9aaefe84bd7f, type: 3}
+  onEnterAction: 
+  onExitAction: Complete
+  parents:
+  - cc3e177b-ba19-4898-af6c-4969a2a96825
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 398
+    y: 538
+    width: 200
+    height: 100
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &-5290304370871484036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e16ed594bade5248a4fa856ca1c25c8, type: 3}
+  m_Name: 11c161da-2f3b-4cf4-865c-76fa619af68c
+  m_EditorClassIdentifier: 
+  speaker: 000100
+  text: Aw man, you let the pizza go cold! Here, try again
+  avatar: {fileID: 8378443193133127593, guid: 179abaf2fb942634e88b249cdca4c37b, type: 3}
+  voiceClip: {fileID: 0}
+  onEnterAction: 
+  onExitAction: Chase
+  parents: []
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 49
+    y: 339
+    width: 200
+    height: 100
+  condition:
+    predicate: ObjectiveNotComplete
+    parameters:
+    - Pizza Time
+    - 1
+--- !u!114 &-3406872327564633419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e16ed594bade5248a4fa856ca1c25c8, type: 3}
+  m_Name: cc3e177b-ba19-4898-af6c-4969a2a96825
+  m_EditorClassIdentifier: 
+  speaker: 010000
+  text: "Hey, I\u2019m back. Customer seemed happy enough. So about your end of the
+    deal..."
+  avatar: {fileID: 6425241025402575561, guid: 942fab1c20d669e4c93a78c207b02b7c, type: 3}
+  voiceClip: {fileID: 8300000, guid: 43ad5a0c54142f74eb38d3bfe7b2e3b7, type: 3}
+  onEnterAction: 
+  onExitAction: 
+  parents: []
+  children:
+  - 418ce50a-6d82-4882-9b78-7c7d951d3b8e
+  rect:
+    serializedVersion: 2
+    x: 57
+    y: 504
+    width: 200
+    height: 100
+  condition:
+    predicate: ObjectiveComplete
+    parameters:
+    - Pizza Time
+    - 1
+--- !u!114 &-2555705996000303936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e16ed594bade5248a4fa856ca1c25c8, type: 3}
+  m_Name: 82bc0e52-26fa-4f47-9f78-4ea9900e5e93
+  m_EditorClassIdentifier: 
+  speaker: 010000
+  text: Sure. I got some time
+  avatar: {fileID: 6425241025402575561, guid: 942fab1c20d669e4c93a78c207b02b7c, type: 3}
+  voiceClip: {fileID: 8300000, guid: f45355c26173da24280c8daaca07e968, type: 3}
+  onEnterAction: 
+  onExitAction: 
+  parents:
+  - ce275368-be30-470c-9067-57ab697007d0
+  children:
+  - 999699ca-07a3-4276-9e5a-d234d7e0d264
+  rect:
+    serializedVersion: 2
+    x: 346
+    y: 236
+    width: 200
+    height: 100
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3b6026f005a5d34f9f66e8250bc3745, type: 3}
+  m_Name: PizzaQuest
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 7774647755534177270}
+  - {fileID: -2555705996000303936}
+  - {fileID: -5474256975244083272}
+  - {fileID: -3406872327564633419}
+  - {fileID: -5461308842435539247}
+  - {fileID: -5290304370871484036}
+  - {fileID: 3196334201636383232}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &3196334201636383232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e16ed594bade5248a4fa856ca1c25c8, type: 3}
+  m_Name: 587d7fdb-19f4-4930-9ab7-0790c86b5fcd
+  m_EditorClassIdentifier: 
+  speaker: 000100
+  text: Mmm... oh yeah.... So good!
+  avatar: {fileID: 8378443193133127593, guid: 179abaf2fb942634e88b249cdca4c37b, type: 3}
+  voiceClip: {fileID: 0}
+  onEnterAction: 
+  onExitAction: 
+  parents: []
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 60
+    y: 669
+    width: 200
+    height: 100
+  condition:
+    predicate: CompletedQuest
+    parameters:
+    - Pizza Time
+--- !u!114 &7774647755534177270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e16ed594bade5248a4fa856ca1c25c8, type: 3}
+  m_Name: ce275368-be30-470c-9067-57ab697007d0
+  m_EditorClassIdentifier: 
+  speaker: 000100
+  text: "Hey, Buddy! I got a problem here. I gotta deliver these pizzas but my car
+    is uhhh... well its kinda messed up. Would ya do me a solid and help out? Could
+    be a slice in for ya\u2019. "
+  avatar: {fileID: 8378443193133127593, guid: 179abaf2fb942634e88b249cdca4c37b, type: 3}
+  voiceClip: {fileID: 8300000, guid: b8229812f8662d943b441c40bacc4fe4, type: 3}
+  onEnterAction: 
+  onExitAction: 
+  parents: []
+  children:
+  - 82bc0e52-26fa-4f47-9f78-4ea9900e5e93
+  rect:
+    serializedVersion: 2
+    x: 35
+    y: 175
+    width: 200
+    height: 100
+  condition:
+    predicate: 
+    parameters: []
